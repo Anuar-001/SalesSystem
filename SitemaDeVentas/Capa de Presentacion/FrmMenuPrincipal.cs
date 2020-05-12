@@ -30,6 +30,8 @@ namespace Capa_de_Presentacion
             timer1.Start();
         }
 
+      
+
         private void btnProductos_Click(object sender, EventArgs e)
         {
             FrmListadoProductos P = new FrmListadoProductos();
@@ -72,10 +74,20 @@ namespace Capa_de_Presentacion
             E.Show();
         }
 
-        private void FrmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        //Revisar si es indispensable, si no eliminar
+        //private void FrmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    Application.Exit();
+        //}
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

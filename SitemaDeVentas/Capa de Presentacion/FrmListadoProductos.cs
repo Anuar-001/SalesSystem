@@ -76,7 +76,7 @@ namespace Capa_de_Presentacion
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             //if (dataGridView1.SelectedRows.Count > 0){
-            //    //DevComponents.DotNetBar.MessageBoxEx.Show("La Fila no debe Estar Seleccionada.");
+            //    //DevComponents.DotNetBar.MessageBoxEx.Show("La Fila no esta selccionada.");
             //    //FrmRegistroProductos P = new FrmRegistroProductos();
             //    //dataGridView1.ClearSelection();
             //    //P.Show();

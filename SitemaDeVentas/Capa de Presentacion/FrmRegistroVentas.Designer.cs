@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -238,6 +238,7 @@
             // 
             // txtDocIdentidad
             // 
+            this.txtDocIdentidad.BackColor = System.Drawing.Color.White;
             this.txtDocIdentidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDocIdentidad.Location = new System.Drawing.Point(116, 23);
             this.txtDocIdentidad.Name = "txtDocIdentidad";
@@ -257,6 +258,7 @@
             // 
             // txtDatos
             // 
+            this.txtDatos.BackColor = System.Drawing.Color.White;
             this.txtDatos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDatos.Location = new System.Drawing.Point(65, 50);
             this.txtDatos.Name = "txtDatos";
@@ -310,9 +312,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(422, 60);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 16);
+            this.label12.Size = new System.Drawing.Size(35, 16);
             this.label12.TabIndex = 12;
-            this.label12.Text = "I.G.V. :";
+            this.label12.Text = "IVA :";
             // 
             // btnBusquedaProducto
             // 
@@ -353,6 +355,7 @@
             // 
             // txtPVenta
             // 
+            this.txtPVenta.BackColor = System.Drawing.Color.White;
             this.txtPVenta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPVenta.Location = new System.Drawing.Point(188, 57);
             this.txtPVenta.Name = "txtPVenta";
@@ -372,6 +375,7 @@
             // 
             // txtStock
             // 
+            this.txtStock.BackColor = System.Drawing.Color.White;
             this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStock.Location = new System.Drawing.Point(55, 58);
             this.txtStock.Name = "txtStock";
@@ -391,6 +395,7 @@
             // 
             // txtMarca
             // 
+            this.txtMarca.BackColor = System.Drawing.Color.White;
             this.txtMarca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMarca.Location = new System.Drawing.Point(385, 24);
             this.txtMarca.Name = "txtMarca";
@@ -401,6 +406,7 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BackColor = System.Drawing.Color.White;
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescripcion.Location = new System.Drawing.Point(93, 24);
             this.txtDescripcion.Name = "txtDescripcion";
@@ -471,9 +477,9 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle1.Format = "C2";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column4.HeaderText = "P. UNIT.";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
@@ -481,9 +487,9 @@
             // 
             // Column3
             // 
-            dataGridViewCellStyle2.Format = "C2";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column3.HeaderText = "IMPORTE";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
@@ -555,6 +561,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(649, 515);
             this.Controls.Add(this.txtIdProducto);
             this.Controls.Add(this.btnEliminarItem);
