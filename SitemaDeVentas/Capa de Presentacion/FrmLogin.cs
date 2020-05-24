@@ -46,17 +46,17 @@ namespace Capa_de_Presentacion
                     if (Mensaje == "Su Contraseña es Incorrecta.")
                     {
                         MessageBox.Show(Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                        txtPassword.Text = "Contraseña";
-                        txtPassword.UseSystemPasswordChar = true;
+                        txtPassword.Clear();
+                        txtPassword.Focus();
                     }
                     else
                         if (Mensaje == "El Nombre de Usuario no Existe.")
                         {
                             MessageBox.Show(Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
-                            txtUser.Text = "Usuario";
-                            txtPassword.Text = "Contraseña";
-                            txtPassword.UseSystemPasswordChar = true;
-                    }
+                            txtUser.Clear();
+                            txtPassword.Clear();
+                            txtUser.Focus();
+                        }
                         else
                         {
                             MessageBox.Show(Mensaje, "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
@@ -90,40 +90,6 @@ namespace Capa_de_Presentacion
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void txtUser_Enter(object sender, EventArgs e)
-        {
-            if (txtUser.Text == "Usuario")
-            {
-                txtUser.Text = "";
-            }
-        }
-
-        private void txtUser_Leave(object sender, EventArgs e)
-        {
-            if (txtUser.Text == "")
-            {
-                txtUser.Text = "Usuario";
-            }
-        }
-
-        private void txtPassword_Enter(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "Contraseña")
-            {
-                txtPassword.Text = "";
-                txtPassword.UseSystemPasswordChar = false;
-            }
-        }
-
-        private void txtPassword_Leave(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Contraseña";
-                txtPassword.UseSystemPasswordChar = true;
-            }
         }
     }
 }

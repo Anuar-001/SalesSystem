@@ -33,16 +33,16 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
             this.btnIngresar.Location = new System.Drawing.Point(71, 390);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(241, 29);
-            this.btnIngresar.TabIndex = 0;
+            this.btnIngresar.TabIndex = 4;
             this.btnIngresar.Text = "&Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
@@ -78,14 +78,10 @@
             this.txtPassword.Location = new System.Drawing.Point(71, 315);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(241, 30);
             this.txtPassword.TabIndex = 3;
             this.txtPassword.Text = "Contraseña";
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // txtUser
             // 
@@ -99,8 +95,6 @@
             this.txtUser.TabIndex = 2;
             this.txtUser.Text = "Usuario";
             this.txtUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
-            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // panel1
             // 
@@ -112,6 +106,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(388, 25);
             this.panel1.TabIndex = 6;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox5.Image = global::Capa_de_Presentacion.Properties.Resources.id_card_4;
+            this.pictureBox5.Location = new System.Drawing.Point(76, 283);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.pictureBox4.Image = global::Capa_de_Presentacion.Properties.Resources.locked_4;
+            this.pictureBox4.Location = new System.Drawing.Point(76, 317);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -137,28 +153,6 @@
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pictureBox5.Image = global::Capa_de_Presentacion.Properties.Resources.id_card_4;
-            this.pictureBox5.Location = new System.Drawing.Point(76, 283);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.pictureBox4.Image = global::Capa_de_Presentacion.Properties.Resources.locked_4;
-            this.pictureBox4.Location = new System.Drawing.Point(76, 317);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -193,10 +187,10 @@
             this.Text = "FrmLogin";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

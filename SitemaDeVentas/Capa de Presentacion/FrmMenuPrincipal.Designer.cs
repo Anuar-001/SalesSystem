@@ -45,13 +45,11 @@
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -146,7 +144,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -157,7 +154,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel3.BackColor = System.Drawing.Color.SeaGreen;
             this.panel3.Controls.Add(this.lblUsuario);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lblHora);
@@ -173,7 +170,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel4.BackColor = System.Drawing.Color.LightGreen;
             this.panel4.Controls.Add(this.btnEmpleados);
             this.panel4.Controls.Add(this.btnProductos);
             this.panel4.Controls.Add(this.btnVentas);
@@ -202,7 +199,7 @@
             // btnProductos
             // 
             this.btnProductos.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnProductos.BackColor = System.Drawing.Color.Transparent;
+            this.btnProductos.BackColor = System.Drawing.Color.LightGreen;
             this.btnProductos.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -254,25 +251,12 @@
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Capa_de_Presentacion.Properties.Resources.maximizar;
-            this.pictureBox3.Location = new System.Drawing.Point(1271, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Capa_de_Presentacion.Properties.Resources.minimizar;
-            this.pictureBox2.Location = new System.Drawing.Point(1245, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(1271, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -303,7 +287,6 @@
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IsMdiContainer = true;
             this.MaximizeBox = false;
             this.Name = "FrmMenuPrincipal";
             this.Opacity = 0.95D;
@@ -315,7 +298,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -342,6 +324,5 @@
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

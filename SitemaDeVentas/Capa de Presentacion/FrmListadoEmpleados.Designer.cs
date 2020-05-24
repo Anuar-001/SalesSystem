@@ -47,7 +47,6 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.txtDatos = new System.Windows.Forms.TextBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -211,22 +210,11 @@
             this.txtDatos.TabIndex = 11;
             this.txtDatos.TextChanged += new System.EventHandler(this.txtDatos_TextChanged);
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(503, 282);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
-            this.btnEliminar.TabIndex = 12;
-            this.btnEliminar.Text = "&Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
             // FrmListadoEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 312);
-            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.txtDatos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
@@ -267,6 +255,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDatos;
-        private System.Windows.Forms.Button btnEliminar;
     }
 }

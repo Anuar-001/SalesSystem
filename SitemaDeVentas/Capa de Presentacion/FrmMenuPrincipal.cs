@@ -35,28 +35,24 @@ namespace Capa_de_Presentacion
         private void btnProductos_Click(object sender, EventArgs e)
         {
             FrmListadoProductos P = new FrmListadoProductos();
-            P.MdiParent = this;
             P.Show();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
             FrmListadoClientes C = new FrmListadoClientes();
-            C.MdiParent = this;
             C.Show();
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
             FrmRegistroVentas V = new FrmRegistroVentas();
-            V.MdiParent = this;
             V.Show();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             FrmRegistrarUsuarios U = new FrmRegistrarUsuarios();
-            U.MdiParent = this;
             U.Show();
         }
 
@@ -75,7 +71,6 @@ namespace Capa_de_Presentacion
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             FrmListadoEmpleados E = new FrmListadoEmpleados();
-            E.MdiParent = this;
             E.Show();
         }
 
@@ -86,12 +81,7 @@ namespace Capa_de_Presentacion
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
+            
         }
     }
 }

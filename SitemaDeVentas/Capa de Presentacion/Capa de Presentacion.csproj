@@ -242,7 +242,6 @@
     <Content Include="Resources\1button.png" />
     <Content Include="Resources\1button_click.png" />
     <Content Include="Resources\1button_hover.png" />
-    <None Include="Resources\maximizar.png" />
     <None Include="Resources\user-4.png" />
     <None Include="Resources\locked-4.png" />
     <None Include="Resources\id-card-4.png" />
