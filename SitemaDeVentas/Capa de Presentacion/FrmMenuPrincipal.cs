@@ -74,6 +74,12 @@ namespace Capa_de_Presentacion
             E.Show();
         }
 
+        //Revisar si es indispensable, si no eliminar
+        //private void FrmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        //{
+        //    Application.Exit();
+        //}
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
