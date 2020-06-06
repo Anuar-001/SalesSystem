@@ -56,12 +56,6 @@ namespace Capa_de_Presentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            //if (dataGridView1.SelectedRows.Count > 0)
-            //{
-            //    DevComponents.DotNetBar.MessageBoxEx.Show("La Fila no debe Estar Seleccionada.");
-            //}
-            //else
-            //{
                 FrmRegistroCliente C = new FrmRegistroCliente(); 
                 if (dataGridView1.SelectedRows.Count > 0)
                     Program.Evento = 1;
@@ -69,7 +63,7 @@ namespace Capa_de_Presentacion
                     Program.Evento = 0;
                 dataGridView1.ClearSelection();
                 C.Show();
-            //}
+
                 ListarClientes();
         }
 

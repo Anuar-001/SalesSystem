@@ -35,26 +35,36 @@ namespace Capa_de_Presentacion
         private void btnProductos_Click(object sender, EventArgs e)
         {
             FrmListadoProductos P = new FrmListadoProductos();
+            P.MdiParent = this;
             P.Show();
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
             FrmListadoClientes C = new FrmListadoClientes();
+            C.MdiParent = this;
             C.Show();
+        }
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            FrmListadoEmpleados E = new FrmListadoEmpleados();
+            E.MdiParent = this;
+            E.Show();
+        }
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            FrmRegistrarUsuarios U = new FrmRegistrarUsuarios();
+            U.MdiParent = this;
+            U.Show();
         }
 
         private void btnVentas_Click(object sender, EventArgs e)
         {
             FrmRegistroVentas V = new FrmRegistroVentas();
+            V.MdiParent = this;
             V.Show();
         }
 
-        private void btnUsuarios_Click(object sender, EventArgs e)
-        {
-            FrmRegistrarUsuarios U = new FrmRegistrarUsuarios();
-            U.Show();
-        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -68,11 +78,6 @@ namespace Capa_de_Presentacion
             lblHora.Text = DateTime.Now.ToShortTimeString();
         }
 
-        private void btnEmpleados_Click(object sender, EventArgs e)
-        {
-            FrmListadoEmpleados E = new FrmListadoEmpleados();
-            E.Show();
-        }
 
         //Revisar si es indispensable, si no eliminar
         //private void FrmMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)

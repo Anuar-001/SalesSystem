@@ -75,12 +75,6 @@ namespace Capa_de_Presentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            //if (dataGridView1.SelectedRows.Count > 0){
-            //    //DevComponents.DotNetBar.MessageBoxEx.Show("La Fila no esta selccionada.");
-            //    //FrmRegistroProductos P = new FrmRegistroProductos();
-            //    //dataGridView1.ClearSelection();
-            //    //P.Show();
-            //}else{
                 FrmRegistroProductos P = new FrmRegistroProductos();
                 if (dataGridView1.SelectedRows.Count > 0)
                     Program.Evento = 1;
@@ -88,7 +82,6 @@ namespace Capa_de_Presentacion
                     Program.Evento = 0;
                 dataGridView1.ClearSelection();
                 P.Show();
-           // }
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -179,7 +172,6 @@ namespace Capa_de_Presentacion
                 Program.Stock = Convert.ToInt32(dataGridView1.CurrentRow.Cells[6].Value.ToString());
                 this.Close();
         }
-
 
     }
 }
